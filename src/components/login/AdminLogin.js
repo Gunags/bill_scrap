@@ -41,12 +41,6 @@ export const AdminLogin = () => {
                 type="password"
                 size="lg"
               />
-
-              <p className="small mb-3 pb-lg-2">
-                <a className="text-white-50" href="#!">
-                  Forgot password?
-                </a>
-              </p>
               <MDBBtn outline className="mx-2 px-5" color="white" size="sm">
                 Login
               </MDBBtn>

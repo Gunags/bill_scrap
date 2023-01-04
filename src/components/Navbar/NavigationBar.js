@@ -7,7 +7,7 @@ export const NavigationBar = () => {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Nishanth Tools</Navbar.Brand>
+          <Navbar.Brand href="#home">NS TOOLS</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#features">Admin Login</Nav.Link>
             <Nav.Link href="#pricing">User Login</Nav.Link>
