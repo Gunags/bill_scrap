@@ -1,34 +1,86 @@
+import React from "react";
 import { useState } from "react";
-import { Form, InputGroup } from "react-bootstrap";
 import DatePicker from "react-date-picker";
-import formElement from "./formElement.JSON";
+
 export const AddBill = () => {
+  const options = [
+    { value: "", text: "--Choose an option--" },
+    { value: "Product1", text: "Product 1", price: "254" },
+    { value: "Product2", text: "Product 2", price: "520" },
+    { value: "Product3", text: "Product 1", price: "485" },
+  ];
+
+  const [selected, setSelected] = useState(options[0].value);
+  const [selectedPrice, setSelectedPrice] = useState(options[0].price);
   const [value, onChange] = useState(new Date());
-  const [SelectValue, setSelectValue] = useState([
-    { id: 1, itemName: "Item 1", price: 254 },
-    { id: 2, itemName: "Item 2", price: 202 },
-    { id: 3, itemName: "Item 3", price: 152 },
-  ]);
+
+  const handleChange = (event) => {
+    setSelected(event.target.value);
+    setSelectedPrice(event.target.value);
+  };
   return (
-    <div>
-      <Form.Group className="mb-2" controlId="formBasicEmail">
-        <Form.Control type="invoice" placeholder="Invoice Number" size="sm" />
-        <br />
-        <Form.Text>Bill Date</Form.Text>
-        <DatePicker onChange={onChange} value={value} />
-        <br />
-        <Form.Select aria-label="Default select example" size="sm">
-          <option>Select the Item</option>
-          <option value={1}>{SelectValue[0].itemName}</option>
-          <option value={2}>{SelectValue[1].itemName}</option>
-          <option value={3}>{SelectValue[2].itemName}</option>
-        </Form.Select>
-        <InputGroup className="mb-3">
-          <InputGroup.Text>₹</InputGroup.Text>
-          <Form.Control aria-label="Amount (to the nearest rupees)" />
-          <InputGroup.Text>.00</InputGroup.Text>
-        </InputGroup>
-      </Form.Group>
-    </div>
+    <>
+      <div className="form container">
+        <form>
+          <div className="mb-3">
+            <label htmlFor="invoiceNumber" className="form-label">
+              Enter Invoice Number
+            </label>
+            <input
+              type="email"
+              className="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="companyname" className="form-label">
+              Company Name
+            </label>
+            <input type="text" className="form-control" id="companyName" />
+          </div>
+          <div>
+            <label htmlFor="selectyouritem" className="form-label">
+              Select Date
+            </label>
+            <DatePicker
+              className="form-select"
+              aria-label="Default select example"
+              onChange={onChange}
+              value={value}
+            />
+          </div>
+          <div>
+            <label htmlFor="selectyouritem" className="form-label">
+              Select the Product Name
+            </label>
+            <select
+              className="form-select"
+              aria-label="Default select example"
+              value={selected}
+              onChange={handleChange}
+            >
+              {options.map((option) => (
+                <option key={option.value} value={option.price}>
+                  {option.text}
+                </option>
+              ))}
+            </select>
+          </div>
+          <br />
+          <div className="input-group mb-3">
+            <span className="input-group-text">₹</span>
+            <input type="text" className="form-control" value={selectedPrice} />
+
+            <span className="input-group-text"> .00</span>
+          </div>
+
+          <br />
+          <button type="submit" className="btn btn-primary">
+            Submit
+          </button>
+        </form>
+      </div>
+    </>
   );
 };

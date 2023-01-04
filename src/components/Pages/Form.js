@@ -1,44 +1,82 @@
 import React from "react";
+import { useState } from "react";
+import DatePicker from "react-date-picker";
 
 export const Form = () => {
+  const options = [
+    { value: "", text: "--Choose an option--" },
+    { value: "Product1", text: "Product 1", price: "254" },
+    { value: "Product2", text: "Product 2", price: "520" },
+    { value: "Product3", text: "Product 1", price: "485" },
+  ];
+
+  const [selected, setSelected] = useState(options[0].value);
+  const [selectedPrice, setSelectedPrice] = useState(options[0].price);
+  const [value, onChange] = useState(new Date());
+
+  const handleChange = (event) => {
+    setSelected(event.target.value);
+    setSelectedPrice(event.target.value);
+  };
   return (
     <>
       <div className="form container">
         <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">
-              Email address
+          <div className="mb-3">
+            <label htmlFor="invoiceNumber" className="form-label">
+              Enter Invoice Number
             </label>
             <input
               type="email"
-              class="form-control"
+              className="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
             />
           </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">
-              Password
+          <div className="mb-3">
+            <label htmlFor="companyname" className="form-label">
+              Company Name
             </label>
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
+            <input type="text" className="form-control" id="companyName" />
+          </div>
+          <div>
+            <label htmlFor="selectyouritem" className="form-label">
+              Select Date
+            </label>
+            <DatePicker
+              className="form-select"
+              aria-label="Default select example"
+              onChange={onChange}
+              value={value}
             />
           </div>
           <div>
-            <label for="selectyouritem" class="form-label">
-              Select the Product Item
+            <label htmlFor="selectyouritem" className="form-label">
+              Select the Product Name
             </label>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+            <select
+              className="form-select"
+              aria-label="Default select example"
+              value={selected}
+              onChange={handleChange}
+            >
+              {options.map((option) => (
+                <option key={option.value} value={option.price}>
+                  {option.text}
+                </option>
+              ))}
             </select>
           </div>
           <br />
-          <button type="submit" class="btn btn-primary">
+          <div className="input-group mb-3">
+            <span className="input-group-text">₹</span>
+            <input type="text" className="form-control" value={selectedPrice} />
+
+            <span className="input-group-text"> .00</span>
+          </div>
+
+          <br />
+          <button type="submit" className="btn btn-primary">
             Submit
           </button>
         </form>
