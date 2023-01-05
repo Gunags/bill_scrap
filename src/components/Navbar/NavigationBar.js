@@ -7,10 +7,10 @@ export const NavigationBar = () => {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">NS TOOLS</Navbar.Brand>
+          <Navbar.Brand href="/">NS TOOLS</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#features">Admin Login</Nav.Link>
-            <Nav.Link href="#pricing">User Login</Nav.Link>
+            <Nav.Link href="/adminlogin">Admin Login</Nav.Link>
+            <Nav.Link href="userlogin">User Login</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
