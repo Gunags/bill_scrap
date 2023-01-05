@@ -15,7 +15,10 @@ function App() {
     <div className="App" style={myStyle}>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="https://gunags.github.io/bill_scrap/"
+            element={<Home />}
+          />
           <Route path="/adminlogin" element={<AdminLogin />} />
           <Route path="/userlogin" element={<UserLogin />} />
         </Routes>
