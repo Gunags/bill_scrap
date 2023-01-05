@@ -1,7 +1,7 @@
 import React from "react";
 import { UserLogin } from "./components/login/UserLogin";
 import { AdminLogin } from "./components/login/AdminLogin";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./components/Pages/Home";
 import bg from "./Image/2RNb.gif";
 function App() {
