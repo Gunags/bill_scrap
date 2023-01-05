@@ -13,12 +13,9 @@ function App() {
   };
   return (
     <div className="App" style={myStyle}>
-      <Router>
+      <Router basename="/bill_scrap">
         <Routes>
-          <Route
-            path="https://gunags.github.io/bill_scrap"
-            element={<Home />}
-          />
+          <Route path="/bill_scrap" element={<Home />} />
           <Route path="/adminlogin" element={<AdminLogin />} />
           <Route path="/userlogin" element={<UserLogin />} />
         </Routes>
