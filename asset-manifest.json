@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/bill_scrap/static/js/main.faad92e2.js",
+    "main.js": "/bill_scrap/static/js/main.f79d6970.js",
     "static/media/2RNb.gif": "/bill_scrap/static/media/2RNb.66cf2b898d3a267258e5.gif",
     "index.html": "/bill_scrap/index.html",
-    "main.faad92e2.js.map": "/bill_scrap/static/js/main.faad92e2.js.map"
+    "main.f79d6970.js.map": "/bill_scrap/static/js/main.f79d6970.js.map"
   },
   "entrypoints": [
-    "static/js/main.faad92e2.js"
+    "static/js/main.f79d6970.js"
   ]
 }
