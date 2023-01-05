@@ -16,7 +16,7 @@ function App() {
       <Router>
         <Routes>
           <Route
-            path="https://gunags.github.io/bill_scrap/"
+            path="https://gunags.github.io/bill_scrap"
             element={<Home />}
           />
           <Route path="/adminlogin" element={<AdminLogin />} />

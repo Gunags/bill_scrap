@@ -15,6 +15,7 @@ export const UserLogin = () => {
   return (
     <div>
       <NavigationBar />
+
       <MDBContainer fluid>
         <MDBRow className="d-flex justify-content-center align-items-center h-100">
           <MDBCol col="12">
