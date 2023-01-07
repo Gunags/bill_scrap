@@ -9,7 +9,6 @@ import {
   MDBInput,
   MDBIcon,
 } from "mdb-react-ui-kit";
-import { NavigationBar } from "../Navbar/NavigationBar";
 import { Home } from "../Pages/Home";
 
 export const AdminLogin = () => {
