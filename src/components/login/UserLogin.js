@@ -9,12 +9,12 @@ import {
   MDBInput,
   MDBIcon,
 } from "mdb-react-ui-kit";
-import { NavigationBar } from "../Navbar/NavigationBar";
+import { Home } from "../Pages/Home";
 
 export const UserLogin = () => {
   return (
     <div>
-      <NavigationBar />
+      <Home />
 
       <MDBContainer fluid>
         <MDBRow className="d-flex justify-content-center align-items-center h-100">
