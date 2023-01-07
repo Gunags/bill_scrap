@@ -7,7 +7,6 @@ import {
   MDBCard,
   MDBCardBody,
   MDBInput,
-  MDBIcon,
 } from "mdb-react-ui-kit";
 import { Home } from "../Pages/Home";
 
@@ -35,6 +34,7 @@ export const AdminLogin = () => {
                   id="formControlLg"
                   type="email"
                   size="lg"
+                  for="validationDefault03"
                 />
                 <MDBInput
                   wrapperClass="mb-4 mx-5 w-100"
@@ -44,38 +44,9 @@ export const AdminLogin = () => {
                   type="password"
                   size="lg"
                 />
-                <MDBBtn outline className="mx-2 px-5" color="white" size="sm">
+                <MDBBtn className="mx-1 px-1" color="white">
                   Login
                 </MDBBtn>
-
-                <div className="d-flex flex-row mt-3 mb-5">
-                  <MDBBtn
-                    tag="a"
-                    color="none"
-                    className="m-3"
-                    style={{ color: "white" }}
-                  >
-                    <MDBIcon fab icon="facebook-f" size="lg" />
-                  </MDBBtn>
-
-                  <MDBBtn
-                    tag="a"
-                    color="none"
-                    className="m-3"
-                    style={{ color: "white" }}
-                  >
-                    <MDBIcon fab icon="twitter" size="lg" />
-                  </MDBBtn>
-
-                  <MDBBtn
-                    tag="a"
-                    color="none"
-                    className="m-3"
-                    style={{ color: "white" }}
-                  >
-                    <MDBIcon fab icon="google" size="lg" />
-                  </MDBBtn>
-                </div>
               </MDBCardBody>
             </MDBCard>
           </MDBCol>
