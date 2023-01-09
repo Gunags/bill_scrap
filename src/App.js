@@ -4,6 +4,10 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./components/Pages/Home";
 import bg from "./Image/2RNb.gif";
 import React from "react";
+import { UserHome } from "./components/Pages/UserHome";
+import { AdminHome } from "./components/Pages/AdminHome";
+import { AddBill } from "./components/Pages/AddBill";
+import { AllBills } from "./components/Pages/AllBills";
 
 const App = () => {
   const myStyle = {
@@ -19,6 +23,10 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           <Route path="/adminlogin" element={<AdminLogin />} />
           <Route path="/userlogin" element={<UserLogin />} />
+          <Route path="/userhome" element={<UserHome />} />
+          <Route path="/adminhome" element={<AdminHome />} />
+          <Route path="/addbill" element={<AddBill />} />
+          <Route path="/addbill" element={<AllBills />} />
         </Routes>
       </HashRouter>
     </div>
