@@ -1,0 +1,16 @@
+[
+  {
+    "invoiceNumber": 1001,
+    "companyName": "infy",
+    "date": "1/10/2023",
+    "productName": "Product 1",
+    "price": "254"
+  },
+  {
+    "invoiceNumber": 1002,
+    "companyName": "infy",
+    "date": "1/10/2023",
+    "productName": "Product 2",
+    "price": "520"
+  }
+]

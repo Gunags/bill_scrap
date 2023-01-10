@@ -26,7 +26,7 @@ const App = () => {
           <Route path="/userhome" element={<UserHome />} />
           <Route path="/adminhome" element={<AdminHome />} />
           <Route path="/addbill" element={<AddBill />} />
-          <Route path="/addbill" element={<AllBills />} />
+          <Route path="/allbills" element={<AllBills />} />
         </Routes>
       </HashRouter>
     </div>

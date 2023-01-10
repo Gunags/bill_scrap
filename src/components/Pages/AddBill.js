@@ -20,7 +20,7 @@ export const AddBill = () => {
   };
   return (
     <>
-      <div className="form container">
+      <div className="d-flex justify-content-center text-white ">
         <form>
           <div className="mb-3">
             <label htmlFor="invoiceNumber" className="form-label">
