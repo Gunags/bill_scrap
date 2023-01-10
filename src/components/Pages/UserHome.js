@@ -7,7 +7,9 @@ export const UserHome = () => {
     <div>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/">NS TOOLS</Navbar.Brand>
+          <Navbar.Brand href="https://gunags.github.io/bill_scrap/">
+            NS TOOLS
+          </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#/addbill">Add Bill</Nav.Link>
             <Nav.Link href="#/allbills">All Bills</Nav.Link>

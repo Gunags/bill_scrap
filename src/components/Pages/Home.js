@@ -7,7 +7,9 @@ export const Home = () => {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand>NS TOOLS</Navbar.Brand>
+          <Navbar.Brand href="https://gunags.github.io/bill_scrap/">
+            NS TOOLS
+          </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#/adminlogin">Admin Login</Nav.Link>
             <Nav.Link href="#/userlogin">User Login</Nav.Link>
