@@ -7,7 +7,7 @@ import React from "react";
 import { UserHome } from "./components/Pages/UserHome";
 import { AdminHome } from "./components/Pages/AdminHome";
 import { AddBill } from "./components/Pages/AddBill";
-import { AllBills } from "./components/Pages/AllBills";
+import AllBills from "./components/Pages/AllBills";
 
 const App = () => {
   const myStyle = {

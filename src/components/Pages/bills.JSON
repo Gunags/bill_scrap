@@ -1,15 +1,29 @@
 [
   {
-    "invoiceNumber": 1001,
+    "invoiceNumber": 1,
     "companyName": "infy",
-    "date": "1/10/2023",
+    "date": "1/8/2023",
     "productName": "Product 1",
     "price": "254"
   },
   {
-    "invoiceNumber": 1002,
-    "companyName": "infy",
+    "invoiceNumber": 2,
+    "companyName": "Tata",
     "date": "1/10/2023",
+    "productName": "Product 2",
+    "price": "520"
+  },
+  {
+    "invoiceNumber": 3,
+    "companyName": "bata",
+    "date": "1/12/2023",
+    "productName": ["Product 2", "product 2"],
+    "price": "520"
+  },
+  {
+    "invoiceNumber": 4,
+    "companyName": "Dota",
+    "date": "1/12/2023",
     "productName": "Product 2",
     "price": "520"
   }
