@@ -20,7 +20,7 @@ const App = () => {
     <div style={myStyle}>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/bill_scrap" element={<Home />} />
           <Route path="/adminlogin" element={<AdminLogin />} />
           <Route path="/userlogin" element={<UserLogin />} />
           <Route path="/userhome" element={<UserHome />} />
