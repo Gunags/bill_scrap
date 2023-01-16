@@ -1,6 +1,6 @@
 import { UserLogin } from "./components/login/UserLogin";
 import { AdminLogin } from "./components/login/AdminLogin";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./components/Pages/Home";
 import bg from "./Image/2RNb.gif";
 import React from "react";
@@ -18,7 +18,7 @@ const App = () => {
   };
   return (
     <div style={myStyle}>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/adminlogin" element={<AdminLogin />} />
@@ -28,7 +28,7 @@ const App = () => {
           <Route path="/addbill" element={<AddBill />} />
           <Route path="/allbills" element={<AllBills />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 };

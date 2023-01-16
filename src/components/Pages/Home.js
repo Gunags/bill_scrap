@@ -11,10 +11,10 @@ export const Home = () => {
             NS TOOLS
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#/adminlogin">Admin Login</Nav.Link>
-            <Nav.Link href="#/userlogin">User Login</Nav.Link>
-            <Nav.Link href="#/userhome">User Dashboard</Nav.Link>
-            <Nav.Link href="#/adminhome">Admin Dashboard</Nav.Link>
+            <Nav.Link href="/adminlogin">Admin Login</Nav.Link>
+            <Nav.Link href="/userlogin">User Login</Nav.Link>
+            <Nav.Link href="/userhome">User Dashboard</Nav.Link>
+            <Nav.Link href="/adminhome">Admin Dashboard</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
