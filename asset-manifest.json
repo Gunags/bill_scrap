@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bill_scrap/static/css/main.bfd55eef.css",
-    "main.js": "/bill_scrap/static/js/main.d76f0e4a.js",
+    "main.js": "/bill_scrap/static/js/main.c087d2ed.js",
     "static/media/2RNb.gif": "/bill_scrap/static/media/2RNb.66cf2b898d3a267258e5.gif",
     "index.html": "/bill_scrap/index.html",
     "main.bfd55eef.css.map": "/bill_scrap/static/css/main.bfd55eef.css.map",
-    "main.d76f0e4a.js.map": "/bill_scrap/static/js/main.d76f0e4a.js.map"
+    "main.c087d2ed.js.map": "/bill_scrap/static/js/main.c087d2ed.js.map"
   },
   "entrypoints": [
     "static/css/main.bfd55eef.css",
-    "static/js/main.d76f0e4a.js"
+    "static/js/main.c087d2ed.js"
   ]
 }
